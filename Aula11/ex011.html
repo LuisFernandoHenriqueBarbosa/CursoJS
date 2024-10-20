@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>Sistema de verificação de estrangeiro</h1>
+    Digite o pais que você vive:
+    <input type="text" name="txtpais" id="txtpais"><br>
+    <input type="button" value="Verificar" onclick="Check()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function Check(){
+            var txtpais = window.document.querySelector('input#txtpais')
+            var res = window.document.querySelector('div#res')
+            var pais = String(txtpais.value)
+            res.innerHTML = `Pais que vive é <strong>${pais}</strong>`
+            if(pais.toLowerCase() == 'brasil'){
+                res.innerHTML += ' Você é Brasileiro'
+            }else{
+                res.innerHTML += ' Você é Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
