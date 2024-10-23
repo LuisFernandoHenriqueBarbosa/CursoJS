@@ -37,7 +37,7 @@ function verificar() {
       }
     }
     res.style.textAlign = 'center'
-    res.innerHTML = `Seu gênero é <strong>${genero}</strong> e sua idade é <strong>${idade}<strong> anos`
+    res.innerHTML = `Seu gênero é <strong>${genero}</strong>, e sua idade é <strong>${idade}<strong> anos`
     res.appendChild(img)
 
   }
